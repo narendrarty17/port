@@ -2,7 +2,7 @@ const DeveloperIntro = () => {
     return (
         <div>
             {/* For smaller screens */}
-            <div className="flex flex-col md:hidden gap-10 mb-10 justify-center items-center mt-10">
+            <div className="flex flex-col lg:hidden gap-10 mb-10 justify-center items-center mt-10">
                 <div
                     className="items-center mb-[-25px] flex flex-col gap-4 mt-5"
                 >
@@ -54,7 +54,7 @@ const DeveloperIntro = () => {
             </div>
 
             {/* For bigger screens */}
-            <div className="hidden md:flex flex-wrap lg:flex-no-wrap gap-10 mb-10 md:mb-0 justify-center items-center mt-10">
+            <div className="hidden lg:flex flex-wrap lg:flex-no-wrap gap-10 mb-10 md:mb-0 justify-center items-center mt-10">
                 <div className="flex flex-col md:w-lg order-3 md:order-1 items-start">
                     <img
                         src="/images/quote-up.svg"
