@@ -1,6 +1,6 @@
 import Navigation from "@/components/navigation";
 import DeveloperIntro from "@/components/developerIntro";
-import MyServices from "@/components/temp";
+import MyServices from "@/components/myServices";
 import WorkExperience from "@/components/workExperience";
 import WhyHire from "@/components/whyHire";
 import Testimonials from "@/components/testimonials";

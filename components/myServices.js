@@ -1,22 +1,22 @@
 const myServices = () => {
     return (
-        <div className="flex flex-col bg-gradient-to-r from-gray-700 via-gray-900 to-black rounded-3xl">
-            <div className="flex flex-col md:flex-row gap-5 items-center justify-center px-10 py-8">
-                <div className="text-4xl tracking-tighter">
+        <div className="flex flex-col overflow-x-hidden w-screen bg-gradient-to-r from-gray-700 via-gray-900 to-black rounded-3xl">
+            <div className="flex flex-col md:flex-row gap-5 items-center justify-between py-8">
+                <div className="text-4xl pl-10 tracking-tighter">
                     <span className="text-gray-50">My </span>
                     <span className="text-orange-400">Services</span>
                 </div>
-                <div className="p-2 text-white text-sm font-medium tracking-tight">
+                <div className="pl-5 md:pl-0 text-white text-xl font-medium tracking-tight">
                     We craft seamless UI/UX, bespoke websites/apps,
-                    and robust server-side business logi.
+                    and robust server-side business logic.
                 </div>
             </div >
             <div className="flex flex-col md:flex-row items-center justify-between gap-10 pb-8 px-10">
-                <div className="flex-col pt-12 w-[420px] md:w-[400px] overflow-hidden relative flex">
+                <div className="flex-col pt-12 w-[90%] sm:w-[80%] md:w-[400px] overflow-hidden relative flex">
                     <img
                         loading="lazy"
                         src="/images/brown-designer-rectangle.svg"
-                        className="absolute h-auto w-auto object-cover object-center inset-0"
+                        className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         UI/ UX Design
@@ -30,11 +30,11 @@ const myServices = () => {
                         />
                     </div>
                 </div>
-                <div className="flex-col pt-12 w-[420px] md:w-[400px] overflow-hidden relative flex">
+                <div className="flex-col pt-12 w-[90%] md:w-[400px] overflow-hidden relative flex">
                     <img
                         loading="lazy"
                         src="/images/brown-designer-rectangle.svg"
-                        className="absolute h-auto w-auto object-cover object-center inset-0"
+                        className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         UI/ UX Design
@@ -48,11 +48,11 @@ const myServices = () => {
                         />
                     </div>
                 </div>
-                <div className="flex-col pt-12 w-[420px] md:w-[400px] overflow-hidden relative flex">
+                <div className="flex-col pt-12 w-[90%] md:w-[400px] overflow-hidden relative flex">
                     <img
                         loading="lazy"
                         src="/images/brown-designer-rectangle.svg"
-                        className="absolute h-auto w-auto object-cover object-center inset-0"
+                        className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         UI/ UX Design
