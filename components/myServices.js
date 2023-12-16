@@ -18,7 +18,7 @@ const myServices = () => {
                         src="/images/brown-designer-rectangle.svg"
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
-                    <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
+                    <div className="relative pl-3 md:pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         UI/ UX Design
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
@@ -36,7 +36,7 @@ const myServices = () => {
                         src="/images/brown-designer-rectangle.svg"
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
-                    <div className="truncate relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
+                    <div className="truncate relative p-3 md:pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         Front-End Development
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
@@ -54,7 +54,7 @@ const myServices = () => {
                         src="/images/brown-designer-rectangle.svg"
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
-                    <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
+                    <div className="relative pl-3 md:pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
                         Backend Development
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
