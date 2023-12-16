@@ -14,10 +14,10 @@ const fromMyBlogPost = () => {
                 <div className="flex flex-col gap-5">
                     <div className="relative">
                         <img
-                            className="max-w-[275px]"
+                            className="max-w-[290px]"
                             src="/images/blogImg01.png"
                         />
-                        <div className="mt-[-68px] ml-[200px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
+                        <div className="mt-[-70px] ml-[210px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
                             <img
                                 loading="lazy"
                                 src="/images/up-right-arrow-white.png"
@@ -47,10 +47,10 @@ const fromMyBlogPost = () => {
                 <div className="flex flex-col gap-5">
                     <div className="relative">
                         <img
-                            className="max-w-[275px]"
+                            className="max-w-[290px]"
                             src="/images/blogImg01.png"
                         />
-                        <div className="mt-[-68px] ml-[200px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
+                        <div className="mt-[-70px] ml-[210px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
                             <img
                                 loading="lazy"
                                 src="/images/up-right-arrow-white.png"
@@ -80,10 +80,10 @@ const fromMyBlogPost = () => {
                 <div className="flex flex-col gap-5">
                     <div className="relative">
                         <img
-                            className="max-w-[275px]"
+                            className="max-w-[290px]"
                             src="/images/blogImg01.png"
                         />
-                        <div className="mt-[-68px] ml-[200px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
+                        <div className="mt-[-70px] ml-[210px] justify-center bg-slate-800 flex w-[80px] h-[80px] p-5 rounded-full">
                             <img
                                 loading="lazy"
                                 src="/images/up-right-arrow-white.png"
