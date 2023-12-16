@@ -24,7 +24,7 @@ const navigation = () => {
                 <a className="text-white text-base tracking-tight px-5 py-3">Project</a>
                 <a className="text-white text-base tracking-tight px-5 py-3">contact</a>
             </div>
-            <div class="absolute top-0 right-0 p-5">
+            <div className="absolute top-0 right-0 p-5">
                 <img
                     className="w-10 sm:hidden"
                     src="/images/menubar.svg"
