@@ -6,7 +6,7 @@ const myServices = () => {
                     <span className="text-gray-50">My </span>
                     <span className="text-orange-400">Services</span>
                 </div>
-                <div className="max-w-lg text-white text-xl font-medium tracking-tight">
+                <div className="p-2 text-white text-sm font-medium tracking-tight">
                     We craft seamless UI/UX, bespoke websites/apps,
                     and robust server-side business logi.
                 </div>
