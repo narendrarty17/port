@@ -9,7 +9,7 @@ const DeveloperIntro = () => {
                     <img loading="lazy" src="/images/hello.svg" />
                     <div className="text-4xl w-[75%] tracking-tighter text-center relative z-10">
                         <p className="text-neutral-900">
-                            I'm testing <span className="text-orange-400">Narendra,</span>
+                            I'm  <span className="text-orange-400">Narendra,</span>
                         </p>
                         <p className="text-neutral-900">Full Stack Web Developer</p>
                     </div>
