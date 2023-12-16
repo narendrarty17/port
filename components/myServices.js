@@ -30,20 +30,20 @@ const myServices = () => {
                         />
                     </div>
                 </div>
-                <div className="flex-col pt-12 w-[90%] md:w-[400px] overflow-hidden relative flex">
+                <div className="flex-col pt-12 w-[95%] md:w-[400px] overflow-hidden relative flex">
                     <img
                         loading="lazy"
                         src="/images/brown-designer-rectangle.svg"
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
-                    <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
-                        UI/ UX Design
+                    <div className="truncate relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
+                        Front-End Development
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
                     <div className="relative flex flex-row pt-2 relative overflow-hidden self-stretch flex aspect-[1.1885714285714286] w-full mt-12 pt-12 items-end">
                         <img
                             loading="lazy"
-                            src="/images/stacked-rect-0.png"
+                            src="/images/stacked-rect-1.png"
                             className="absolute h-full rounded-3xl w-full object-cover object-center inset-0"
                         />
                     </div>
@@ -55,7 +55,7 @@ const myServices = () => {
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="relative pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
-                        UI/ UX Design
+                        Backend Development
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
                     <div className="relative flex flex-row pt-2 relative overflow-hidden self-stretch flex aspect-[1.1885714285714286] w-full mt-12 pt-12 items-end">
