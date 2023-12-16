@@ -37,7 +37,7 @@ const myServices = () => {
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="truncate relative p-3 md:pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
-                        Front-End Development
+                        Frontend Dev
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
                     <div className="relative flex flex-row pt-2 relative overflow-hidden self-stretch flex aspect-[1.1885714285714286] w-full mt-12 pt-12 items-end">
@@ -55,7 +55,7 @@ const myServices = () => {
                         className="absolute w-full h-auto w-auto object-cover object-center inset-0"
                     />
                     <div className="relative pl-3 md:pl-6 text-white text-2xl font-medium tracking-tight w-[342px] max-w-[342px]">
-                        Backend Development
+                        Backend Dev
                     </div>
                     <div className="relative bg-gray-50 bg-opacity-30 min-h-[2px] mt-5" />
                     <div className="relative flex flex-row pt-2 relative overflow-hidden self-stretch flex aspect-[1.1885714285714286] w-full mt-12 pt-12 items-end">
