@@ -86,10 +86,9 @@ const DeveloperIntro = () => {
                         <p className="text-neutral-900">Full Stack Web Developer</p>
                     </div>
                     <div className="relative mt-[-55px]">
-                        <div className="z-10 rounded-t-full absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[180px] w-[360px] sm:h-[225px] sm:w-[450px] md:h-[275px] md:w-[550px] bg-orange-400" />
                         <img
                             loading="lazy"
-                            className="relative z-20 w-72 md:w-auto"
+                            className="relative z-20 w-20 md:w-auto"
                             src="/images/developer.png"
                             alt="Developer Portrait"
                         />
