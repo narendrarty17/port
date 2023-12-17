@@ -5,19 +5,23 @@ const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 2000 },
-        items: 4
+        items: 4,
+        partialVisibilityGutter: 30
     },
     desktop: {
         breakpoint: { max: 2000, min: 1024 },
-        items: 3
+        items: 3,
+        partialVisibilityGutter: 30
     },
     tablet: {
         breakpoint: { max: 1024, min: 768 },
-        items: 2
+        items: 2,
+        partialVisibilityGutter: 30
     },
     mobile: {
         breakpoint: { max: 768, min: 0 },
-        items: 1
+        items: 1,
+        partialVisibilityGutter: 30
     }
 };
 
@@ -36,7 +40,7 @@ const testimonials = () => {
                     "Discover excellence, creativity, and seamless collaboration in the testimonials below."
                 </p>
             </div>
-            <Carousel responsive={responsive} swipable={true}>
+            <Carousel responsive={responsive} swipable={true} removeArrowOnDeviceType={['tablet', 'mobile']} partialVisbile={true}>
                 <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
                     <div className="flex items-start justify-between">
                         <div className="flex flex-col gap-1">
@@ -186,7 +190,7 @@ const testimonials = () => {
                     </p>
                 </div>
             </Carousel>
-        </div>
+        </div >
     );
 }
 
