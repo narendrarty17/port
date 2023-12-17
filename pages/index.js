@@ -24,7 +24,6 @@ export default function Home() {
       <Portfolio />
       <Banner />
       <FromMyBlogPost />
-      <CarouselDefault />
       <Footer />
     </div>
   );

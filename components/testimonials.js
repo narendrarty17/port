@@ -36,7 +36,7 @@ const testimonials = () => {
                     "Discover excellence, creativity, and seamless collaboration in the testimonials below."
                 </p>
             </div>
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive} swipable={true}>
                 <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
                     <div className="flex items-start justify-between">
                         <div className="flex flex-col gap-1">
