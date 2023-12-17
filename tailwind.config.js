@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'sm': '480px',
+      'sm': '576px',
       'md': '768px',
       'td': '908px',
       'lg': '1024px',

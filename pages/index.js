@@ -8,6 +8,8 @@ import Portfolio from "@/components/myPorfolio";
 import Banner from "@/components/banner";
 import FromMyBlogPost from "@/components/fromMyBlogPost";
 import Footer from "@/components/footer";
+import Carousel from "@/components/carousel";
+import CarouselDefault from "@/components/carousel";
 
 
 export default function Home() {
@@ -22,6 +24,7 @@ export default function Home() {
       <Portfolio />
       <Banner />
       <FromMyBlogPost />
+      <CarouselDefault />
       <Footer />
     </div>
   );
