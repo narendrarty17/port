@@ -5,8 +5,8 @@ const footer = () => {
                 <div className="text-white text-3xl font-bold">
                     Lets Connect there
                 </div>
-                <div className="px-6 py-2 w-[160px] h-[60px] font-medium rounded-full bg-orange-400 text-white text-xl">
-                    <button className="flex justify-center items-center items-center gap-2">
+                <div className="px-6 py-2 w-[170px] h-[60px] font-medium rounded-full bg-orange-400 text-white text-xl">
+                    <button className="flex justify-center items-center pl-1 pt-1.5 gap-2">
                         <p>Hire me</p>
                         <img
                             className="w-8"
@@ -73,9 +73,8 @@ const footer = () => {
                 </div>
             </div>
             <div className="mt-10 w-full h-[2px] bg-gray-500" />
-            <div className="flex justify-between text-white mt-10">
-                <div>Copyright@2023 Jayesh. All Rights Reserved.</div>
-                <div className="hidden md:inline">User Terms & Conditions | Privacy Policy</div>
+            <div className="flex flex-col items-center justify-center ml-auto text-white mt-10">
+                Copyright@2023. All Rights Reserved.
             </div>
         </footer>
     );
