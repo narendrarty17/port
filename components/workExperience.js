@@ -10,6 +10,111 @@ const circleStyle = {
 
 const DottedCircle = () => <div style={circleStyle} />;
 
+const workExp = [
+    {
+        "company": "Param Environment Pvt. Ltd.",
+        "period": "Sep 2021 - March 2022",
+        "role": " Frontend Developer",
+        "finishedTasks": [
+            "Collaborated with the team to create modern and responsive user interfaces using React.js and Next.js.",
+            "Implemented user authentication and authorization systems for secure login and registration processes.",
+            "Developed product listing pages with dynamic data fetching and rendering for an enhanced user experience."
+        ]
+    },
+    {
+        "company": "skyAI Technologies",
+        "period": "April 2021 - Nov 2022",
+        "role": "Full Stack Developer(MERN)",
+        "finishedTasks": [
+            "Led the development of client websites, employing MongoDB, Express.js, React.js, and Node.js.",
+            "Achieved optimal performance by implementing efficient backend APIs and integrating them seamlessly with the frontend using React.",
+            "Utilized Next.js for server-side rendering, improving website loading speed and SEO performance."
+        ]
+    },
+    {
+        "company": "Web Innovators Ltd",
+        "period": "Dec 2022 - July 2023",
+        "role": "Frontend Engineer",
+        "finishedTasks": [
+            "Engineered visually appealing and intuitive UIs for various web applications using React.js.",
+            "Integrated RESTful APIs to facilitate data retrieval and storage, enhancing overall application functionality.",
+            "Applied responsive design principles to ensure a consistent user experience across different devices."
+        ]
+    },
+    {
+        "company": "Digital Ventures",
+        "period": "Aug 2023 - Nov 2023",
+        "role": "MERN Stack Developer",
+        "finishedTasks": [
+            "Spearheaded the development of a client portal, implementing user dashboards and interactive features.",
+            "Integrated third-party APIs for payment gateways and social media logins, ensuring a seamless user experience.",
+            "Employed Next.js for server-side rendering, optimizing the application's performance and SEO."
+        ]
+    }
+];
+
+const forSmallScreen = workExp.map((work, index) => (
+    <div className="flex flex-col gap-7 items-center">
+        <div className="flex flex-col gap-3 text-center tracking-tight">
+            <div>
+                <div className="text-slate-700 text-2xl font-semibold">
+                    {work.company}
+                </div>
+                <div className="text-gray-400 text-lg tracking-tight">
+                    {work.period}
+                </div>
+            </div>
+            <div className="flex flex-col items-center">
+                <div className="text-slate-700 text-2xl font-semibold tracking-tight">
+                    {work.role}
+                </div>
+                <div className="text-center text-gray-400 max-w-[250px] text-lg tracking-tight">
+                    Loren ipsum dolor sit amet, consectetur
+                    adipiscing elit. Duis lacus nunc, posuere in justo
+                </div>
+            </div>
+        </div>
+
+        {index < workExp.length - 1 && (
+            <div className="flex flex-col gap-3 mb-8 items-center">
+                <div className="w-10 h-10 bg-orange-500 rounded-full relative">
+                    <DottedCircle />
+                </div>
+                <img src='/images/downArr.svg' className="h-6" />
+            </div>
+        )}
+    </div>
+));
+
+const forBigScreen = workExp.map((work, index) => (
+    <div className="flex gap-10 justify-center items-start">
+        <div className="w-[300px] mr-6 pl-2">
+            <div className="text-slate-700 text-2xl font-semibold tracking-tight">
+                {work.company}
+            </div>
+            <div className="text-gray-400 text-lg tracking-tight">
+                {work.period}
+            </div>
+        </div>
+        <div className="flex flex-col gap-5">
+            <div className="w-10 h-10 bg-orange-500 rounded-full relative">
+                <DottedCircle />
+            </div>
+            <img src='/images/downArr.svg' className="h-5" />
+        </div>
+        <div className="ml-8 pr-2">
+            <div className="text-slate-700 text-2xl font-semibold tracking-tight">
+                {work.role}
+            </div>
+            <div className="text-gray-400 text-lg tracking-tight">
+                <p>Loren ipsum dolor sit amet, consectetur</p>
+                <p>adipiscing elit. Duis lacus nunc, posuere in justo</p>
+            </div>
+        </div>
+    </div>
+));
+
+
 const workExperience = () => {
     return (
         <div className="flex flex-col items-center pb-10">
@@ -20,155 +125,14 @@ const workExperience = () => {
 
             {/* For smaller screens */}
             <div className="flex flex-col md:hidden">
-                <div className="flex flex-col gap-7 items-center">
-                    <div className="flex flex-col gap-3 text-center tracking-tight">
-                        <div>
-                            <div className="text-slate-700 text-2xl font-semibold">
-                                Cognizant, Mumbai
-                            </div>
-                            <div className="text-gray-400 text-lg tracking-tight">
-                                Sep 2016 - July 2020
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                                UI/UX Designer
-                            </div>
-                            <div className="text-center text-gray-400 max-w-[250px] text-lg tracking-tight">
-                                Loren ipsum dolor sit amet, consectetur
-                                adipiscing elit. Duis lacus nunc, posuere in justo
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-3 mb-8 items-center">
-                        <div className="w-10 h-10 bg-orange-500 rounded-full relative">
-                            <DottedCircle />
-                        </div>
-                        <img src='/images/downArr.svg' className="h-6" />
-                    </div>
-                </div>
-                <div className="flex flex-col gap-7 items-center">
-                    <div className="flex flex-col gap-3 text-center tracking-tight">
-                        <div>
-                            <div className="text-slate-700 text-2xl font-semibold">
-                                Sugar Pvt Limited, Mumbai
-                            </div>
-                            <div className="text-gray-400 text-lg tracking-tight">
-                                August 2020 - March 2021
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                                Front-end Web Developer
-                            </div>
-                            <div className="text-center text-gray-400 max-w-[250px] text-lg tracking-tight">
-                                Loren ipsum dolor sit amet, consectetur
-                                adipiscing elit. Duis lacus nunc, posuere in justo
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-3 mb-8 items-center">
-                        <div className="w-10 h-10 bg-orange-500 rounded-full relative">
-                            <DottedCircle />
-                        </div>
-                        <img src='/images/downArr.svg' className="h-6" />
-                    </div>
-                </div>
-                <div className="flex flex-col gap-7 items-center">
-                    <div className="flex flex-col gap-3 text-center tracking-tight">
-                        <div>
-                            <div className="text-slate-700 text-2xl font-semibold">
-                                Cinetstox, Mumbai
-                            </div>
-                            <div className="text-gray-400 text-lg tracking-tight">
-                                April 2021 - Till Now
-                            </div>
-                        </div>
-                        <div className="flex flex-col items-center">
-                            <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                                Full Stack Web Developer
-                            </div>
-                            <div className="text-center text-gray-400 max-w-[250px] text-lg tracking-tight">
-                                Loren ipsum dolor sit amet, consectetur
-                                adipiscing elit. Duis lacus nunc, posuere in justo
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {forSmallScreen}
             </div>
 
 
             {/* for bigger screens */}
             <div className="hidden md:flex gap-20">
                 <div className="flex flex-col justify-center gap-20">
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            Cognizant, Mumbai
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            Sep 2016 - July 2020
-                        </div>
-                    </div>
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            Sugee Pvt limited, Delhi
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            July 2020 - Sep 2021
-                        </div>
-                    </div>
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            Cinetstox, Pune
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            Sep 2021 - July 2022
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col justify-center gap-10">
-                    <div className="w-10 h-10 bg-orange-500 rounded-full relative">
-                        <DottedCircle />
-                    </div>
-                    <img src='/images/downArr.svg' className="h-5" />
-                    <div className="w-10 h-10 bg-slate-800 rounded-full relative">
-                        <DottedCircle />
-                    </div>
-                    <img src='/images/downArr.svg' className="h-5" />
-                    <div className="w-10 h-10 bg-orange-500 rounded-full relative">
-                        <DottedCircle />
-                    </div>
-                </div>
-                <div className="flex flex-col justify-center gap-10">
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            UI/UX Designer
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            <p>Loren ipsum dolor sit amet, consectetur</p>
-                            <p>adipiscing elit. Duis lacus nunc, posuere in justo</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            Front-end web developer
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            <p>Loren ipsum dolor sit amet, consectetur</p>
-                            <p>adipiscing elit. Duis lacus nunc, posuere in justo</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="text-slate-700 text-2xl font-semibold tracking-tight">
-                            Full Stack web developer
-                        </div>
-                        <div className="text-gray-400 text-lg tracking-tight">
-                            <p>Loren ipsum dolor sit amet, consectetur</p>
-                            <p>adipiscing elit. Duis lacus nunc, posuere in justo</p>
-                        </div>
-                    </div>
+                    {forBigScreen}
                 </div>
             </div>
         </div>

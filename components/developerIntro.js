@@ -1,3 +1,11 @@
+const developerInfo = {
+    "name": "Narendra",
+    "designation": "Full Stack Web Developer",
+    "image": "/images/developer.png",
+    "experience": "2 Years",
+    "tagLine": "Narendra exceptional coding skills ensures smooth business operations"
+}
+
 const DeveloperIntro = () => {
     return (
         <div>
@@ -21,7 +29,7 @@ const DeveloperIntro = () => {
                         <img
                             loading="lazy"
                             className="relative z-20 ml-auto mr-auto"
-                            src="/images/developer.png"
+                            src={developerInfo.image}
                             alt="Developer Portrait"
                         />
                     </div>
@@ -39,7 +47,7 @@ const DeveloperIntro = () => {
                             <img loading="lazy" src="/images/star.png" />
                         </div>
                         <div className="text-neutral-900 text-center text-3xl font-bold tracking-tighter mt-2">
-                            10 Years
+                            {developerInfo.experience}
                         </div>
                         <div className="text-neutral-900 text-center text-xl tracking-tight whitespace-nowrap mt-1.5">
                             Experience
@@ -51,8 +59,7 @@ const DeveloperIntro = () => {
                             src="/images/quote-up.svg"
                         />
                         <div className="text-slate-700 text-lg w-[150px] font-medium tracking-tight">
-                            Narendra's Exceptional coding skills ensure
-                            our website's success. Highly Recommended
+                            {developerInfo.tagLine}
                         </div>
                     </div>
                 </div>
@@ -65,11 +72,8 @@ const DeveloperIntro = () => {
                         loading="lazy"
                         src="/images/quote-up.svg"
                     />
-                    <div className="text-slate-700 text-lg md:text-xl font-medium tracking-tight">
-                        <p>Narendra's Exceptional </p>
-                        <p>coding skills ensure</p>
-                        <p> our website's success.</p>
-                        <p>Highly Recommended</p>
+                    <div className="text-slate-700 w-[170px] text-lg md:text-xl font-medium tracking-tight">
+                        {developerInfo.tagLine}
                     </div>
                 </div>
                 <div
@@ -103,7 +107,7 @@ const DeveloperIntro = () => {
                         <img loading="lazy" src="/images/star.png" />
                     </div>
                     <div className="text-neutral-900 text-center text-4xl font-bold tracking-tighter mt-3">
-                        10 Years
+                        2 Years
                     </div>
                     <div className="text-neutral-900 text-center text-xl tracking-tight whitespace-nowrap mt-1.5">
                         Experience
