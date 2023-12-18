@@ -12,15 +12,15 @@ const DeveloperIntro = () => {
                     />
                     <div className="text-4xl w-[75%] tracking-tighter text-center relative z-10">
                         <p className="text-neutral-900">
-                            I'm  <span className="text-orange-400">Narendra,</span>
+                            I'm <span className="text-orange-400">Narendra,</span>
                         </p>
                         <p className="text-neutral-900">Full Stack Web Developer</p>
                     </div>
-                    <div className="relative mt-[-50px]">
+                    <div className="relative">
                         <div className="z-10 rounded-t-full absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[150px] w-[300px] sm:h-[190px] sm:w-[380px] bg-orange-400" />
                         <img
                             loading="lazy"
-                            className="relative z-20 w-2/3 ml-auto mr-auto"
+                            className="relative z-20 ml-auto mr-auto"
                             src="/images/developer.png"
                             alt="Developer Portrait"
                         />
@@ -85,10 +85,10 @@ const DeveloperIntro = () => {
                         </p>
                         <p className="text-neutral-900">Full Stack Web Developer</p>
                     </div>
-                    <div className="relative mt-[-55px]">
+                    <div className="relative">
                         <img
                             loading="lazy"
-                            className="relative z-20 w-20 md:w-auto"
+                            className="relative z-20 w-[400px]"
                             src="/images/developer.png"
                             alt="Developer Portrait"
                         />
