@@ -2,11 +2,11 @@ const myServices = () => {
     return (
         <div className="flex flex-col overflow-x-hidden w-screen bg-gradient-to-r from-gray-700 via-gray-900 to-black rounded-3xl">
             <div className="flex flex-col md:flex-row gap-5 items-center justify-between py-8">
-                <div className="text-4xl pl-10 tracking-tighter">
+                <div className="text-4xl tracking-tighter">
                     <span className="text-gray-50">My </span>
                     <span className="text-orange-400">Services</span>
                 </div>
-                <div className="pl-5 md:pl-0 text-white text-xl font-medium tracking-tight">
+                <div className="w-[350px] md:w-[600px] md:mr-5 text-white text-xl font-medium tracking-tight">
                     We craft seamless UI/UX, bespoke websites/apps,
                     and robust server-side business logic.
                 </div>
