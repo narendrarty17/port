@@ -1,6 +1,82 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+const reviews = [
+    {
+        "name": "Ankur Singh",
+        "image": "/images/testimonials/ankur.jpg",
+        "role": "Director, Swanetra",
+        "review": "Outstanding work! Demonstrates a unique blend of technical expertise and creative finesse. Consistently delivers top-notch solutions with precision and attention to detail. A collaborative team player who goes the extra mile to ensure project success. Highly recommended for their dedication and exceptional results!",
+        "rating": 5
+    },
+    {
+        "name": "Rahul Jain",
+        "image": "/images/testimonials/rahul.jpg",
+        "role": "Director, Param Pvt. Ltd.",
+        "review": "Remarkable contributor! Brings a creative approach and technical excellence to every project. Consistently delivers high-quality results with precision and attention to detail. A true team player, always going above and beyond to ensure project success. Exceptional work ethic and skill set, highly recommended!",
+        "rating": 5
+    },
+    {
+        "name": "Ankur Singh",
+        "image": "/images/testimonials/ankur.jpg",
+        "role": "Director, Swanetra",
+        "review": "Outstanding work! Demonstrates a unique blend of technical expertise and creative finesse. Consistently delivers top-notch solutions with precision and attention to detail. A collaborative team player who goes the extra mile to ensure project success. Highly recommended for their dedication and exceptional results!",
+        "rating": 5
+    },
+];
+
+const RatingComponent = (rating) => {
+    const starImage = <img className="w-7 h-7" src="/images/star.png" alt="rating" />;
+    const starElements = [];
+
+    for (let i = 0; i < rating; i++) {
+        starElements.push(starImage);
+    }
+
+    return (
+        <div className="flex">
+            {starElements}
+        </div>
+    );
+}
+
+const clientReviews = reviews.map((review) => (
+    <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
+        <div className="flex items-start justify-between">
+            <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-3">
+                    <img
+                        className="w-12 h-12 rounded-full"
+                        src={review.image}
+                    />
+                    <div className="flex flex-col gap-1">
+                        <div className="text-xl font-medium">
+                            {review.name}
+                        </div>
+                        <div className="text-sm text-gray-200">
+                            {review.role}
+                        </div>
+                    </div>
+                </div>
+                <div className="flex">
+                    <img className="w-7 h-7" src="/images/star.png" />
+                    <img className="w-7 h-7" src="/images/star.png" />
+                    <img className="w-7 h-7" src="/images/star.png" />
+                    <img className="w-7 h-7" src="/images/star.png" />
+                    <img className="w-7 h-7" src="/images/star.png" />
+                </div>
+            </div>
+            <img
+                className="w-20"
+                src="/images/quote-down.svg"
+            />
+        </div>
+        <p className="text-white max-w-[480px] ">
+            {review.review}
+        </p>
+    </div>
+));
+
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -41,154 +117,7 @@ const testimonials = () => {
                 </p>
             </div>
             <Carousel responsive={responsive} swipable={true} removeArrowOnDeviceType={['tablet', 'mobile']} partialVisbile={true}>
-                <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
-                    <div className="flex items-start justify-between">
-                        <div className="flex flex-col gap-1">
-                            <div className="flex items-center gap-3">
-                                <img
-                                    className="w-12 h-12 rounded-full"
-                                    src="/images/Narendra.jpg"
-                                />
-                                <div className="flex flex-col gap-1">
-                                    <div className="text-xl font-medium">
-                                        Jayesh Patil
-                                    </div>
-                                    <div className="text-sm text-gray-200">
-                                        Director, Swanetra
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex">
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                            </div>
-                        </div>
-                        <img
-                            className="w-20"
-                            src="/images/quote-down.svg"
-                        />
-                    </div>
-                    <p className="text-white max-w-[480px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                        lobortis.
-                    </p>
-                </div>
-                <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
-                    <div className="flex items-start justify-between">
-                        <div className="flex flex-col gap-1">
-                            <div className="flex items-center gap-3">
-                                <img
-                                    className="w-12 h-12 rounded-full"
-                                    src="/images/Narendra.jpg"
-                                />
-                                <div className="flex flex-col gap-1">
-                                    <div className="text-xl font-medium">
-                                        Jayesh Patil
-                                    </div>
-                                    <div className="text-sm text-gray-200">
-                                        Director, Swanetra
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex">
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                            </div>
-                        </div>
-                        <img
-                            className="w-20"
-                            src="/images/quote-down.svg"
-                        />
-                    </div>
-                    <p className="text-white max-w-[480px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                        lobortis.
-                    </p>
-                </div>
-                <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
-                    <div className="flex items-start justify-between">
-                        <div className="flex flex-col gap-1">
-                            <div className="flex items-center gap-3">
-                                <img
-                                    className="w-12 h-12 rounded-full"
-                                    src="/images/Narendra.jpg"
-                                />
-                                <div className="flex flex-col gap-1">
-                                    <div className="text-xl font-medium">
-                                        Jayesh Patil
-                                    </div>
-                                    <div className="text-sm text-gray-200">
-                                        Director, Swanetra
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex">
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                            </div>
-                        </div>
-                        <img
-                            className="w-20"
-                            src="/images/quote-down.svg"
-                        />
-                    </div>
-                    <p className="text-white max-w-[480px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                        lobortis.
-                    </p>
-                </div>
-                <div className="flex flex-col gap-2 mr-4 bg-gray-600  text-white max-w-[500px] p-3 rounded-xl">
-                    <div className="flex items-start justify-between">
-                        <div className="flex flex-col gap-1">
-                            <div className="flex items-center gap-3">
-                                <img
-                                    className="w-12 h-12 rounded-full"
-                                    src="/images/Narendra.jpg"
-                                />
-                                <div className="flex flex-col gap-1">
-                                    <div className="text-xl font-medium">
-                                        Jayesh Patil
-                                    </div>
-                                    <div className="text-sm text-gray-200">
-                                        Director, Swanetra
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="flex">
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                                <img className="w-7 h-7" src="/images/star.png" />
-                            </div>
-                        </div>
-                        <img
-                            className="w-20"
-                            src="/images/quote-down.svg"
-                        />
-                    </div>
-                    <p className="text-white max-w-[480px] ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                        lobortis.
-                    </p>
-                </div>
+                {clientReviews}
             </Carousel>
         </div >
     );
