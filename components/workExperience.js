@@ -69,8 +69,11 @@ const forSmallScreen = workExp.map((work, index) => (
                     {work.role}
                 </div>
                 <div className="text-center text-gray-400 max-w-[250px] text-lg tracking-tight">
-                    Loren ipsum dolor sit amet, consectetur
-                    adipiscing elit. Duis lacus nunc, posuere in justo
+                    <ul className="list-disc mt-2 flex flex-col gap-2">
+                        {work.finishedTasks.map((task) => (
+                            <li>{task}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
@@ -88,7 +91,7 @@ const forSmallScreen = workExp.map((work, index) => (
 
 const forBigScreen = workExp.map((work, index) => (
     <div className="flex gap-10 justify-center items-start">
-        <div className="w-[300px] mr-6 pl-2">
+        <div className="w-[350px] mr-6 pl-2">
             <div className="text-slate-700 text-2xl font-semibold tracking-tight">
                 {work.company}
             </div>
@@ -107,8 +110,11 @@ const forBigScreen = workExp.map((work, index) => (
                 {work.role}
             </div>
             <div className="text-gray-400 text-lg tracking-tight">
-                <p>Loren ipsum dolor sit amet, consectetur</p>
-                <p>adipiscing elit. Duis lacus nunc, posuere in justo</p>
+                <ul className="w-[350px] ml-5 list-disc mt-2 flex flex-col gap-2">
+                    {work.finishedTasks.map((task) => (
+                        <li>{task}</li>
+                    ))}
+                </ul>
             </div>
         </div>
     </div>
