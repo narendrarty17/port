@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mr-0">
       <Navigation />
       <DeveloperIntro />
       <MyServices />
