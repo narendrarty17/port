@@ -1,6 +1,6 @@
 const whyHire = () => {
     return (
-        <div className="flex flex-col pb-5 md:flex-row py-5 md:py-10 gap-10 md:gap-10 bg-gray-100 items-center justify-center">
+        <div className="flex flex-col pb-10 md:flex-row py-5 md:py-10 gap-10 md:gap-10 bg-gray-100 items-center justify-center">
             <div className="relative">
                 <div
                     className="absolute bg-orange-400 h-2/3 w-full bottom-0 rounded-full"
