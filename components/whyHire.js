@@ -16,7 +16,7 @@ const whyHire = () => {
                     <span className="text-orange-400">Hire me</span>
                     <span className="text-slate-700">?</span>
                 </div>
-                <div className="pl-5 pr-2 md:pl-0 md:pr-0 md:w-[400px] italic text-gray-400 text-xl tracing-tight">
+                <div className="pl-5 pr-5 md:pl-0 md:pr-0 md:w-[400px] italic text-gray-400 text-xl tracing-tight">
                     "I bring a proven track record of MERN stack expertise, a commitment to excellence, and a results-oriented mindset."
                 </div>
                 <div className="flex gap-20">
