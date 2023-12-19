@@ -1,6 +1,6 @@
 const whyHire = () => {
     return (
-        <div className="flex flex-col mb-5 md:flex-row py-5 md:py-10 gap-10 md:gap-10 bg-gray-100 items-center justify-center">
+        <div className="flex flex-col pb-5 md:flex-row py-5 md:py-10 gap-10 md:gap-10 bg-gray-100 items-center justify-center">
             <div className="relative">
                 <div
                     className="absolute bg-orange-400 h-2/3 w-full bottom-0 rounded-full"
@@ -16,7 +16,7 @@ const whyHire = () => {
                     <span className="text-orange-400">Hire me</span>
                     <span className="text-slate-700">?</span>
                 </div>
-                <div className="pl-5 pr-2 md:pl-0 md:pr-0 md:w-[400px] italic text-gray-400 text-xl tracing-tight">
+                <div className="pl-5 md:pl-0 md:pr-0 md:w-[400px] italic text-gray-400 text-xl tracing-tight">
                     "I bring a proven track record of MERN stack expertise, a commitment to excellence, and a results-oriented mindset."
                 </div>
                 <div className="flex gap-20">
