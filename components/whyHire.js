@@ -7,24 +7,22 @@ const whyHire = () => {
                 />
                 <img
                     className="h-[450px] md:h-[550px] relative"
-                    src="/images/developerStanding .png"
+                    src="/images/developerStanding.png"
                 />
             </div>
-            <div className="flex flex-col gap-10 items-start">
+            <div className="flex flex-col items-center md:items-start gap-10 items-start">
                 <div className="text-4xl font-semibold tracking-tighter">
                     <span className="text-slate-700">Why </span>
                     <span className="text-orange-400">Hire me</span>
                     <span className="text-slate-700">?</span>
                 </div>
-                <div className="text-gray-400 text-xl tracing-tight">
-                    <p>Loren ipsumdolor sit amet, consectetur</p>
-                    <p>Duislacus nunc, posuere in justo </p>
-                    <p>vulputate, bibendum sodales{" "}</p>
+                <div className="pl-5 pr-5 md:pl-0 md:pr-0 md:w-[400px] italic text-gray-400 text-xl tracing-tight">
+                    "I bring a proven track record of MERN stack expertise, a commitment to excellence, and a results-oriented mindset. My dedication to staying at the forefront of technology trends ensures I can contribute innovative solutions and drive success for your team."
                 </div>
                 <div className="flex gap-20">
                     <div>
                         <div className="text-slate-800 text-3xl font-medium tracking-tight">
-                            450+
+                            10+
                         </div>
                         <div className="text-gray-500 text-lg tracking-tight mt-2">
                             Project Completed
@@ -32,7 +30,7 @@ const whyHire = () => {
                     </div>
                     <div>
                         <div className="text-slate-800 text-3xl font-medium tracking-tight">
-                            50+
+                            5+
                         </div>
                         <div className="text-gray-500 text-lg tracking-tight mt-2">
                             Satisfied Clients
