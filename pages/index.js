@@ -18,10 +18,10 @@ export default function Home() {
       <WorkExperience />
       <WhyHire />
       <Testimonials />
-      <Portfolio />
+      {/* <Portfolio />
       <Banner />
       <FromMyBlogPost />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
