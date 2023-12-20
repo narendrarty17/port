@@ -10,7 +10,7 @@ const reviews = [
         "rating": 5
     },
     {
-        "name": "Neha Puri Malhotra",
+        "name": "Neha Malhotra",
         "image": "/images/testimonials/neha.jpg",
         "role": "Director, Dental Guardians",
         "review": "Remarkable contributor! Brings a creative approach and technical excellence to every project. Consistently delivers high-quality results with precision and attention to detail. A true team player, always going above and beyond to ensure project success. Exceptional work ethic and skill set, highly recommended!",
