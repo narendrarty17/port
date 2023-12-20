@@ -10,16 +10,16 @@ const reviews = [
         "rating": 5
     },
     {
-        "name": "Rahul Jain",
-        "image": "/images/testimonials/rahul.jpg",
-        "role": "Director, Param Pvt. Ltd.",
+        "name": "Neha Puri Malhotra",
+        "image": "/images/testimonials/neha.jpg",
+        "role": "Director, Dental Guardians",
         "review": "Remarkable contributor! Brings a creative approach and technical excellence to every project. Consistently delivers high-quality results with precision and attention to detail. A true team player, always going above and beyond to ensure project success. Exceptional work ethic and skill set, highly recommended!",
         "rating": 5
     },
     {
-        "name": "Ankur Singh",
-        "image": "/images/testimonials/ankur.jpg",
-        "role": "Director, Swanetra",
+        "name": "Ali Asgar Fanaswalla",
+        "image": "/images/testimonials/ali.jpg",
+        "role": "Director, M.J. Enterprises",
         "review": "Outstanding work! Demonstrates a unique blend of technical expertise and creative finesse. Consistently delivers top-notch solutions with precision and attention to detail. A collaborative team player who goes the extra mile to ensure project success. Highly recommended for their dedication and exceptional results!",
         "rating": 5
     },
@@ -71,7 +71,7 @@ const clientReviews = reviews.map((review) => (
                 src="/images/quote-down.svg"
             />
         </div>
-        <p className="text-white max-w-[480px] ">
+        <p className="text-white overflow-hidden h-[300px] sm:h-[320px] md:h-[200px] ">
             {review.review}
         </p>
     </div>
