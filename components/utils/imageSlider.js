@@ -1,44 +1,42 @@
-import React, { useState } from 'react';
-import { useSwipeable } from 'react-swipeable';
+import React from 'react';
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 2000 },
-        items: 2,
-        partialVisibilityGutter: 30
-    },
-    desktop: {
-        breakpoint: { max: 2000, min: 1024 },
-        items: 2,
-        partialVisibilityGutter: 30
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 768 },
-        items: 1,
-        partialVisibilityGutter: 30
-    },
-    mobile: {
-        breakpoint: { max: 768, min: 0 },
-        items: 1,
-        partialVisibilityGutter: 30
+// Import Swiper styles
+import 'swiper/css';
+
+const breakpoints = {
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 10
     }
-};
-
+}
 
 const ImageSlider = ({ images }) => {
     return (
-        <div className='w-full'>
-            <Carousel responsive={responsive}>
-                {images.map((url) => (
-                    <img src={url} />
-                ))}
-            </Carousel>
-        </div>
-    );
+        <Swiper
+            className='w-full md:w-1/2'
+            slidesPerView={1}
+            breakpoints={{
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            }}
+        >
+            {images.map((url, index) => (
+                <SwiperSlide>
+                    <img
+                        className='w-auto'
+                        key={index}
+                        src={url}
+                        alt={`Slide ${index + 1}`}
+                    />
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    )
 };
 
 export default ImageSlider;

@@ -21,7 +21,7 @@ const portfolio = () => {
                     See All
                 </button>
             </div>
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col justify-center items-center gap-5">
                 <ImageSlider images={images} />
                 <div className="flex gap-2 justify-center">
                     <div className="w-10 h-3 bg-orange-400 rounded-lg" />
