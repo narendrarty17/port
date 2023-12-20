@@ -11,12 +11,12 @@ const portfolio = () => {
                 </button>
             </div>
             <div className="flex flex-col gap-5">
-                <div className="flex flex-col md:flex-row gap-10">
+                <div className="flex flex-col items-center gap-10">
                     <div>
-                        <img src="/images/portfolioProject.png" />
+                        <img src="/images/portfolio/dryEyeIndiaIntro.jpg" />
                     </div>
                     <div>
-                        <img src="/images/portfolioProject.png" />
+                        <img src="/images/portfolio/dryEyeProduct.jpg" />
                     </div>
                 </div>
                 <div className="flex gap-2 justify-center">
