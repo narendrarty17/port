@@ -1,3 +1,14 @@
+import React, { useState } from 'react';
+import ImageSlider from './utils/imageSlider';
+
+const images = [
+    "/images/portfolio/project_0.jpg",
+    "/images/portfolio/project_01.jpg",
+    "/images/portfolio/project_02.jpg",
+    "/images/portfolio/project_03.jpg"
+]
+
+
 const portfolio = () => {
     return (
         <div className="flex flex-col p-10 gap-10">
@@ -10,15 +21,8 @@ const portfolio = () => {
                     See All
                 </button>
             </div>
-            <div className="flex flex-col gap-5">
-                <div className="flex flex-col items-center gap-10">
-                    <div>
-                        <img src="/images/portfolio/dryEyeIndiaIntro.jpg" />
-                    </div>
-                    <div>
-                        <img src="/images/portfolio/dryEyeProduct.jpg" />
-                    </div>
-                </div>
+            <div className="flex flex-col items-center gap-5">
+                <ImageSlider images={images} />
                 <div className="flex gap-2 justify-center">
                     <div className="w-10 h-3 bg-orange-400 rounded-lg" />
                     <div className="w-3 h-3 bg-gray-300 rounded-full" />
