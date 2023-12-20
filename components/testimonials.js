@@ -5,7 +5,7 @@ const reviews = [
     {
         "name": "Ankur Singh",
         "image": "/images/testimonials/ankur.jpg",
-        "role": "Director, Swanetra Healthcare",
+        "role": "Director, Param Environment",
         "review": "Outstanding work! Demonstrates a unique blend of technical expertise and creative finesse. Consistently delivers top-notch solutions with precision and attention to detail. A collaborative team player who goes the extra mile to ensure project success. Highly recommended for their dedication and exceptional results!",
         "rating": 5
     },
