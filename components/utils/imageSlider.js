@@ -16,7 +16,7 @@ const breakpoints = {
 const ImageSlider = ({ images }) => {
     return (
         <Swiper
-            className='w-full md:w-1/2'
+            className='w-full md:w-2/3'
             slidesPerView={1}
             breakpoints={{
                 768: {
